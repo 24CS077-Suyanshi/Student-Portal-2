@@ -1,0 +1,103 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.registration-form 
+{
+    background: white;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    animation: slideFade 0.8s ease-out;
+}
+@keyframes slideFade 
+{
+    0% 
+    {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% 
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.registration-form h2 
+{
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+.registration-form label 
+{
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #555;
+}
+.registration-form input 
+{
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+.registration-form input:focus 
+{
+    border-color: #74ebd5;
+    box-shadow: 0 0 8px rgba(116, 235, 213, 0.5);
+}
+.registration-form .error 
+{
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    min-height: 18px;
+}
+.registration-form button 
+{
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+.registration-form button:hover 
+{
+    background: linear-gradient(135deg, #5a67d8, #6b46c1);
+    transform: scale(1.03);
+}
+@media (max-width: 480px) 
+{
+    .registration-form 
+    {
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .registration-form h2 
+    {
+        font-size: 22px;
+    }
+}
+.error {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+}
